@@ -2,10 +2,27 @@
   "name": "leetcode-typescript",
   "scripts": {
     "test": "vitest",
+    "cov": "vitest run --coverage",
     "format": "prettier --cache --write ."
   },
   "devDependencies": {
     "vitest": "*",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "@types/node": "^18.11.18",
+    "@vitest/coverage-c8": "^0.28.3"
+  },
+  "packageManager": "pnpm@7.26.2",
+  "engines": {
+    "node": "^14.18.0 || >=16.12.0",
+    "pnpm": ">=7"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react",
+        "@types/react",
+        "react-dom"
+      ]
+    }
   }
 }
