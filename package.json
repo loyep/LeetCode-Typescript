@@ -1,0 +1,11 @@
+{
+  "name": "leetcode-typescript",
+  "scripts": {
+    "test": "vitest",
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "vitest": "*",
+    "prettier": "^2.8.3"
+  }
+}
